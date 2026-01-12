@@ -1,10 +1,12 @@
-import {NativeModules, NativeModule} from 'react-native';
+import {NativeModules} from 'react-native';
 
-interface NavigationModuleInterface extends NativeModule {
+interface NavigationModuleInterface {
   pushReactFragmentA(): void;
   pushReactFragmentB(): void;
   pop(): void;
   checkActivityState(): Promise<string>;
+  addListener(eventName: string): void;
+  removeListeners(count: number): void;
 }
 
 const {NavigationModule} = NativeModules;
