@@ -18,7 +18,7 @@ When an Android `FragmentActivity` hosts multiple `ReactFragment` instances and 
 
 - Node.js 18+
 - npm (comes with Node.js)
-- Android SDK with API 26+
+- Android compile SDK version 36
 - JDK 17
 
 ### Installation
@@ -130,13 +130,13 @@ React Native could address this by:
 
 ## Environment
 
-- React Native: 0.76.6
-- react-native-screens: 4.4.0
-- @react-navigation/native: 7.0.14
-- @react-navigation/native-stack: 7.1.10
-- Android minSdk: 26
-- Android targetSdk: 35
-- Kotlin: 1.9.24
+- React Native: 0.83.1
+- react-native-screens: 4.19.0
+- @react-navigation/native: 7.1.14
+- @react-navigation/native-stack: 7.3.21
+- Android minSdk: 27
+- Android targetSdk: 36
+- Kotlin: 2.3.0
 
 ## Debug Output Example
 

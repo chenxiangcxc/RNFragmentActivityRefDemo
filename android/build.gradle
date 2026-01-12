@@ -11,8 +11,6 @@ buildscript {
         minSdkVersion = 27
         compileSdkVersion = 36
         targetSdkVersion = 36
-//         kotlinVersion = "2.2.0"
-//         reactNativeVersion = "0.80.0"
     }
     dependencies {
         classpath libs.bundles.mainAppProjectBuildScriptClasspath

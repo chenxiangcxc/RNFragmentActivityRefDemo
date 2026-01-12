@@ -20,13 +20,6 @@ android {
         versionName "1.0"
     }
 
-//    packagingOptions {
-//        pickFirst 'lib/x86/libc++_shared.so'
-//        pickFirst 'lib/x86_64/libc++_shared.so'
-//        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
-//        pickFirst 'lib/arm64-v8a/libc++_shared.so'
-//    }
-
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -59,8 +52,8 @@ android {
 
 dependencies {
     implementation libs.bundles.kotlin
-    implementation("com.facebook.react:react-android:0.80.0")
-    implementation("com.facebook.react:hermes-android:0.80.0")
+    implementation("com.facebook.react:react-android:0.83.1")
+    implementation("com.facebook.react:hermes-android:0.83.1")
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0")
     implementation("androidx.fragment:fragment-ktx:1.8.9")
