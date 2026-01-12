@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E8F5E9"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏠 Native Home Fragment"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a plain native Android Fragment.\nYou can launch React Native screens from here."
+        android:textSize="16sp"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btn_launch_fragment_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📱 Launch React Native Fragment A"
+        android:textSize="16sp"
+        android:paddingVertical="16dp"
+        android:backgroundTint="#4CAF50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n✓ No React content\n✓ Native Android UI\n✓ First launch screen"
+        android:textSize="14sp"
+        android:textColor="#388E3C"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:lineSpacingMultiplier="1.3" />
+
+</LinearLayout>

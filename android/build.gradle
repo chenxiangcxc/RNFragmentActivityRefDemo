@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url("$rootDir/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/build/libs")
+        }
+    }
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 27
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+//         kotlinVersion = "2.2.0"
+//         reactNativeVersion = "0.80.0"
+    }
+    dependencies {
+        classpath libs.bundles.mainAppProjectBuildScriptClasspath
+        classpath files("$rootDir/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/build/libs/react-native-gradle-plugin.jar")
+    }
+}
+
+allprojects {
+    buildscript {
+        repositories {
+            google()
+            mavenCentral()
+        }
+        dependencies {
+            classpath files("$rootDir/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/build/libs/react-native-gradle-plugin.jar")
+        }
+    }
+
+    repositories {
+        maven {
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        google()
+        mavenCentral()
+    }
+}

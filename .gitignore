@@ -1,0 +1,73 @@
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React Native
+.expo/
+.expo-shared/
+
+# Android
+android/.gradle
+android/.idea
+android/build
+android/app/build
+android/app/release
+android/app/.cxx
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+local.properties
+*.iml
+.idea/
+.cxx/
+
+# Android specific - additional
+android/app/.cxx/
+android/.cxx/
+*.keystore
+!debug.keystore
+captures/
+
+# iOS (not used but keeping for reference)
+ios/Pods/
+ios/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# IDE
+.vscode/
+.claude/

@@ -1,0 +1,26 @@
+[versions]
+kotlinVersion = "2.3.0"
+gradlePluginVersion = "8.13.2"
+
+[libraries]
+android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "gradlePluginVersion" }
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinVersion" }
+kotlin-stdlib-jdk8 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlinVersion" }
+kotlin-stdlib-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlinVersion" }
+kotlin-stdlib-common = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-common", version.ref = "kotlinVersion" }
+react-native-gradle-plugin = { module = "com.facebook.react:react-native-gradle-plugin", version = "0.80.0" }
+
+[bundles]
+
+kotlin = [
+    "kotlin-stdlib",
+    "kotlin-stdlib-jdk8",
+    "kotlin-stdlib-jdk7",
+    "kotlin-stdlib-common"
+]
+
+mainAppProjectBuildScriptClasspath = [
+    "android-gradle-plugin",
+    "kotlin-gradle-plugin"
+]
