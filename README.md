@@ -1,4 +1,4 @@
-# React Native Screens Activity Reference Bug Reproduction
+# React Native Fragment Activity Reference Bug Reproduction
 
 Minimal reproduction repository for **react-native-screens**: React Native fragments lose Activity reference when navigating between fragments in Android.
 
@@ -92,19 +92,6 @@ The app automatically polls and displays the Activity state every 500ms:
 - **MainActivity**: Extends `FragmentActivity` (not `ReactActivity`)
 - **ReactFragmentA** & **ReactFragmentB**: Wrapper fragments that host `com.facebook.react.ReactFragment`
 - **Single ReactNativeHost**: Shared across both fragments
-- **react-native-screens**: Uses `ScreenContainer` and `Screen` components with `enableScreens()`
-
-### Key Code Locations
-
-**JavaScript:**
-- `src/App.tsx` - Main React component with `ScreenContainer` + `Screen`
-- `src/NavigationModule.ts` - TypeScript interface for native module
-
-**Android (Kotlin):**
-- `android/app/src/main/java/com/rnscreenscrashrepro/MainActivity.kt` - Manages fragment transactions
-- `android/app/src/main/java/com/rnscreenscrashrepro/CustomRNFragment.kt` - Custom ReactFragment implementation
-- `android/app/src/main/java/com/rnscreenscrashrepro/NavigationModule.kt` - Native module with checkActivityState() method
-- `android/app/src/main/java/com/rnscreenscrashrepro/NativeFragment.kt` - Plain native fragment
 
 ### Why Activity Reference Is Lost
 
